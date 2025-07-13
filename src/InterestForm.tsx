@@ -103,9 +103,9 @@ export default function AirFryerForm() {
 
   return (
     <div className="page-layout">
-      <img src="/logo.png" alt="Spidr Logo" className="hanging-logo" />
+      <img src="logo.png" alt="Spidr Logo" className="hanging-logo" />
 
-      <img src="/airfryer.png" className="side-image" alt="Air Fryer" />
+      <img src="airfryer.png" className="side-image" alt="Air Fryer" />
       <div className="form-wrapper">
         <h1 className="heading">Spidr Air Fryer Interest Form</h1>
         <form onSubmit={handleSubmit} className="form">

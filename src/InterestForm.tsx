@@ -86,6 +86,7 @@ export default function AirFryerForm() {
     setErrors(prev => ({ ...prev, ...validationErrors }));
 
     if (Object.keys(validationErrors).length === 0) {
+      console.log("Submitted form data:", formData);
       setSuccess(true);
       setTimeout(() => setSuccess(false), 3000);
     }
@@ -103,9 +104,9 @@ export default function AirFryerForm() {
 
   return (
     <div className="page-layout">
-      <img src="logo.png" alt="Spidr Logo" className="hanging-logo" />
+      <img src="/spidr-airfryer-form/logo.png" alt="Spidr Logo" className="hanging-logo" />
 
-      <img src="airfryer.png" className="side-image" alt="Air Fryer" />
+      <img src="/spidr-airfryer-form/airfryer.png" className="side-image" alt="Air Fryer" />
       <div className="form-wrapper">
         <h1 className="heading">Spidr Air Fryer Interest Form</h1>
         <form onSubmit={handleSubmit} className="form">

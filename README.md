@@ -1,69 +1,51 @@
-# React + TypeScript + Vite
+# Spidr Air Fryer Interest Form 🕷️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun and stylish single-page React application built with **Vite + TypeScript**, inspired by the branding and aesthetic of [Spidr Design](https://spidr.design/).
 
-Currently, two official plugins are available:
+##  Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This application serves as a fictional interest form for an air fryer product. It includes the following features:
 
-## Expanding the ESLint configuration
+- Clean, brand-inspired design matching Spidr Design’s style
+- Validated form fields:
+  - First Name
+  - Last Name
+  - Phone Number (with country code dropdown)
+  - Email Address
+  - Estimated Cost of the Air Fryer
+  - A super secret 16-digit Spidr PIN formatted as `####-####-####-####`
+- Form submission prints user input to the browser console (DevTools)
+- Responsive layout with custom styling
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Live Demo
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+ [Live app hosted on GitHub Pages](https://keerthana-928.github.io/spidr-airfryer-form/)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## Repository
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+ [GitHub Repository](https://github.com/Keerthana-928/spidr-airfryer-form)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- React + TypeScript
+- Vite
+- HTML + CSS
+- GitHub Pages (Deployment)
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+##  How to Use
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/Keerthana-928/spidr-airfryer-form.git
+   cd spidr-airfryer-form
+2. Install dependencies:
+   ```bash
+   npm install
+4. Start development server:
+   ```bash
+   npm run dev
+6. Build and deploy:
+   ```bash
+   npm run build
+   npm run deploy
+
